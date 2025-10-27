@@ -6,6 +6,7 @@ Code for FUKUIは、「地域の課題をテクノロジーで解決する」シ
 
 - [Code for FUKUIとは](about.html)
 - [ロゴSVG](https://code4fukui.github.io/code4fukui_logo.svg)/[PNG](https://code4fukui.github.io/code4fukui_logo.png)/[PDF](https://code4fukui.github.io/code4fukui_logo.pdf)/[AI](https://code4fukui.github.io/code4fukui_logo.ai) ([ラプトルSVG](https://code4fukui.github.io/code4fukui_logo_raptor.svg)/[PNG](https://code4fukui.github.io/code4fukui_logo_raptor.png)、[東尋坊SVG](https://code4fukui.github.io/code4fukui_logo_tojinbo.svg)/[PNG](https://code4fukui.github.io/code4fukui_logo_tojinbo.png)、[タイトルSVG](https://code4fukui.github.io/code4fukui_logo_title.svg)/[PNG](https://code4fukui.github.io/code4fukui_logo_title.png))
+- [ロゴSVG 横長](https://code4fukui.github.io/code4fukui_logo_h.svg)
 - [グッズ](https://suzuri.jp/taisukef/designs/17514198) / [グッズ2](https://suzuri.jp/taisukef/designs/17514239)
 - [公式 Twitter](https://twitter.com/code4fukui)
 - [アイデア、質問、何でも相談所！](https://github.com/code4fukui/code4fukui.github.io/issues)
