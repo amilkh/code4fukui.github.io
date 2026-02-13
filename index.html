@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script type="module" src="https://code4fukui.github.io/mark-down/mark-down.js"></script>
 <style>
   #language-selector {
     position: fixed;
@@ -28,32 +28,21 @@
     <option value="en">English</option>
   </select>
 </div>
-<div id="content"></div>
+<mark-down id="content" src="index.md"></mark-down>
 <script>
-  async function loadMarkdown(file) {
-    try {
-      const response = await fetch(file);
-      const markdown = await response.text();
-      document.getElementById('content').innerHTML = marked.parse(markdown);
-    } catch (err) {
-      console.error('Error loading markdown:', err);
-      document.getElementById('content').innerHTML = '<p>Error loading content</p>';
-    }
-  }
-
   function initLanguage() {
     const saved = localStorage.getItem('preferredLanguage') || 'ja';
     document.getElementById('lang-select').value = saved;
     document.documentElement.lang = saved;
     const file = saved === 'en' ? 'index-en.md' : 'index.md';
-    loadMarkdown(file);
+    content.src = file;
   }
 
   function changeLanguage(lang) {
     localStorage.setItem('preferredLanguage', lang);
     document.documentElement.lang = lang;
     const file = lang === 'en' ? 'index-en.md' : 'index.md';
-    loadMarkdown(file);
+    content.src = file;
   }
 
   document.addEventListener('DOMContentLoaded', initLanguage);
